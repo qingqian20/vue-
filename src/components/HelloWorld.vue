@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
-   主页
-   123
+   
   </div>
 </template>
 
