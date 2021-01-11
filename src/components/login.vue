@@ -9,7 +9,7 @@
 <script>
 </script>
 
-<style>
+<style scoped="">
   .login{
       width: 450px;
       height: 600px;

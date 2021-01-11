@@ -1,29 +1,67 @@
 <template>
 
-<div class="container-fluid">
-  <ul class="ss nav flex-column bg-dark navbar-dark" style="width: 15%; text-align:center; height: 1000px;">
-    <li class="nav-item">
-      <span class="nav-link" style="font-size: 30px;margin-top: 5px;">首页</span>
-    </li>
-    <li class="nav-item">
-      <span class="nav-link" >账单管理</span>
-      <div id="demo" class="collapse">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+<div class="sfq" >
+
+  <div id="accordion" style="margin: 0px;padding: 0px;">
+<div class="card" >
+      <div class="card-header" style="background-color:dodgerblue;height: 80px;" >
+        <a class="card-link" style="color: white; font-size: 25px;line-height: 55px;">
+          后台管理系统
+        </a>
+      </div>
+    </div>
+
+    <div class="card" >
+      <div class="card-header" style="background-color: black; padding: 0;">
+      <button type="button" class="btn  btn-block " data-toggle="collapse" data-target="#collapseTwo" style="color: white; font-size: 25px;">商品管理</button>
+      </div>
+      <div id="collapseTwo" class="collapse  show" >
+        <div class="card-body" style="padding: 0px;">
+         <ol>
+           <li>
+             <a>现有商品</a>
+           </li>
+           <li>上架商品</li>
+           <li>修改商品信息</li>
+         </ol>
         </div>
-    </li>
-   
-    <li class="nav-item">
-      <span class="nav-link">账户管理</span>
-    </li>
-    <li class="nav-item">
-      <span class="nav-link" >商品管理</span>
-    </li>
-    <li class="nav-item">
-      <span class="nav-link disabled" >详细信息</span>
-    </li>
-  </ul>
+      </div>
+    </div>
+
+    <div class="card" >
+      <div class="card-header" style="background-color: black; padding: 0; margin: 0;" >
+       <button type="button" class="btn  btn-block " data-toggle="collapse" data-target="#collapseOne" style="color: white; font-size: 25px;">账户管理</button>
+      </div>
+      <div id="collapseOne" class="collapse" >
+        <div class="card-body" style="padding: 0px;">
+          <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="card" >
+      <div class="card-header" style="background-color: black; padding: 0;">
+
+        <button type="button" class="btn  btn-block" data-toggle="collapse" data-target="#collapseThree" style="color: white; font-size: 25px;">订单管理</button>
+      </div>
+      <div id="collapseThree" class="collapse" >
+        <div class="card-body" style="padding: 0px;">
+         <ol>
+           <li>订单信息</li>
+           <li>2</li>
+           <li>3</li>
+         </ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 </template>
@@ -31,13 +69,45 @@
 <script>
 </script>
 
-<style>
-  .ss span{
-     color: white;
+<style scoped="">
+
+  ol{
+    list-style:none;
+    padding: 0px;
+    background-color: #212529;
+    margin: 0;
   }
-  .ss li{
-   margin-bottom: 30px;
-   font-size: 23px;
-   letter-spacing: 15px;
+  li{
+    border: 1px solid black;
+    margin: 0;
+    height: 50px;
+    color: white;
+    line-height: 50px;
+  }
+  li:hover{
+   background-color: #007BFF;
+  }
+  .sfq{
+    width: 15%;
+     text-align: center;
+     font-size: 20px;
+     height: 1000px;
+    background-color: black;
+    padding: 0px;
+    display: inline-block;
+  }
+  .card{
+
+   border-left: none;
+   border-right: none;
+   border-top: 1px solid #212529 ;
+   border-bottom: 1px solid #212529;
+  }
+  .card-header{
+   height: 50px;
+
+  }
+  #accordion{
+   width: 99.5%;
   }
 </style>
