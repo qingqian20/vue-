@@ -1,20 +1,20 @@
 <template>
 
 
-<div class="sfq" >
+<div class="sfq bg-secondary navbar-dark" >
 
   <div id="accordion" style="margin: 0px;padding: 0px;">
-<div class="card" >
-      <div class="card-header" style="background-color:dodgerblue;height: 80px;" >
-        <a class="card-link" style="color: white; font-size: 25px;line-height: 55px;">
+<div class="card " >
+      <div class="card-header" style="height: 80px;" >
+        <a class="card-link" style=" font-size: 25px;line-height: 55px;">
           后台管理系统
         </a>
       </div>
     </div>
 
-    <div class="card" >
-      <div class="card-header" style="background-color: black; padding: 0;">
-      <button type="button" class="btn  btn-block " data-toggle="collapse" data-target="#collapseTwo" style="color: white; font-size: 25px;">商品管理</button>
+    <div class="card bg-info navbar-dark" >
+      <div class="card-header bg-secondary navbar-dark" >
+      <button type="button" class="btn  btn-block " data-toggle="collapse" data-target="#collapseTwo" style=" font-size: 25px;">商品管理</button>
       </div>
       <div id="collapseTwo" class="collapse  show" >
         <div class="card-body" style="padding: 0px;">
@@ -30,14 +30,14 @@
     </div>
 
     <div class="card" >
-      <div class="card-header" style="background-color: black; padding: 0; margin: 0;" >
-       <button type="button" class="btn  btn-block " data-toggle="collapse" data-target="#collapseOne" style="color: white; font-size: 25px;">账户管理</button>
+      <div class="card-header bg-secondary navbar-dark"  >
+       <button type="button" class="btn  btn-block " data-toggle="collapse" data-target="#collapseOne" style=" font-size: 25px;">账户管理</button>
       </div>
       <div id="collapseOne" class="collapse" >
         <div class="card-body" style="padding: 0px;">
           <ol>
-            <li>1</li>
-            <li>2</li>
+            <li>账户信息</li>
+            <li>添加账户</li>
             <li>3</li>
           </ol>
         </div>
@@ -47,9 +47,9 @@
 
 
     <div class="card" >
-      <div class="card-header" style="background-color: black; padding: 0;">
+      <div class="card-header bg-secondary navbar-dark" >
 
-        <button type="button" class="btn  btn-block" data-toggle="collapse" data-target="#collapseThree" style="color: white; font-size: 25px;">订单管理</button>
+        <button type="button" class="btn  btn-block" data-toggle="collapse" data-target="#collapseThree" style=" font-size: 25px;">订单管理</button>
       </div>
       <div id="collapseThree" class="collapse" >
         <div class="card-body" style="padding: 0px;">
@@ -74,25 +74,26 @@
   ol{
     list-style:none;
     padding: 0px;
-    background-color: #212529;
+    background-color: beige;
     margin: 0;
   }
   li{
     border: 1px solid black;
     margin: 0;
     height: 50px;
-    color: white;
+
     line-height: 50px;
   }
   li:hover{
-   background-color: #007BFF;
+   background-color:navajowhite;
   }
   .sfq{
     width: 15%;
      text-align: center;
      font-size: 20px;
      height: 1000px;
-    background-color: black;
+     color: black;
+
     padding: 0px;
     display: inline-block;
   }
@@ -105,9 +106,14 @@
   }
   .card-header{
    height: 50px;
+   padding: 0;
+
 
   }
   #accordion{
    width: 99.5%;
+  }
+  .card-link{
+    color: black;
   }
 </style>

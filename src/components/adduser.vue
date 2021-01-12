@@ -1,36 +1,17 @@
 <template>
   <div>
     <main_top></main_top>
-
     <div class="aa">
-
-      <div class="ua">
-        订单详情
-      </div>
-      <div class="uas">
-
-      </div>
-
-
-
+      <p >添加账户</p>
       <hr />
-      <div class="ua" style="width: 100%;height: 30px;">
-        商品详情
-      </div>
-      <div class="uas">
+    <div class="adduser">
+    
 
-      </div>
-      <hr />
-      <div class="ua" style="width: 100%;height: 30px;">
-        用户详情
-      </div>
-      <div class="uas">
 
-      </div>
+    </div>
+
     </div>
     <main_menu></main_menu>
-
-
   </div>
 </template>
 
@@ -38,15 +19,13 @@
   import main_top from "./main_top.vue"
   import main_menu from "./main_menu.vue"
   export default {
-
     components: {
       main_top,
       main_menu
     },
-
     data() {
       return {
-
+        msg: 'Welcome to Your Vue.js App'
       }
     },
     methods: {
@@ -58,47 +37,41 @@
           success: function(r) {
             						if (r == "") {
             							o.$router.push("/login");
-            						} else {
-            							o.queryAddress();
             						}
-
           },
           xhrFields: {
             withCredentials: true //传递cookie,保持session的唯一性
           },
           crossDomain: true,
         })
-      }
+      },
+
+      //添加user
+      selectuser: function() {
+        var o=this;
+        $.ajax({
+          url: "http://127.0.0.1:8080/java06/ajax/selectuser",
+          success: function(r) {
+                 o.user=r.user;
+          },
+
+        })
+      },
+
+
+
     },
     mounted() {
       this.success();
     }
 
 
+
+
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped="">
-  h1,
-  h2 {
-    font-weight: normal;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  a {
-    color: #42b983;
-  }
-
   .aa {
     width: 85%;
     float: right;
@@ -106,20 +79,17 @@
     background-color: palegoldenrod;
     display: inline-block;
   }
-
-  .ua {
-    width: 100%;
-    height: 30px;
-    border: 1px solid lightgrey;
-    background-color: lightgrey;
-    padding: 5px;
+  .adduser{
+    width: 80%;
+    height: 600px;
+    background-color: #007BFF;
+    margin: auto;
+    margin-top: 100px;
+  }
+  p{
+margin-top: 12px;
+font-size: 20px;
+margin-left: 30px;
   }
 
-  .uas {
-    width: 100%;
-    height: 250px;
-    border: 1px solid lightgrey;
-    background-color: white;
-    padding: 5px;
-  }
 </style>

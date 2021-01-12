@@ -2,7 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import main from '@/components/main'
 import main_menu from '@/components/main_menu'
-
+import user from '@/components/user'
+import login from '@/components/login'
+import register from '@/components/register'
+import adduser from '@/components/adduser'
 Vue.use(Router)
 
 export default new Router({
@@ -18,6 +21,26 @@ export default new Router({
       path: '/main_menu',
       name: 'main_menu',
       component: main_menu
+    },
+    {
+      path: '/user',
+      name: 'user',
+      component: user
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: login
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: register
+    },
+    {
+      path: '/adduser',
+      name: 'adduser',
+      component: adduser
     }
   ]
 })
