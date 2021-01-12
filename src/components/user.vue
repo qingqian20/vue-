@@ -68,7 +68,7 @@
       success: function() {
         var o=this;
         $.ajax({
-          url: "http://127.0.0.1:8080/java06/ajax/useronline",
+          url: "http://127.0.0.1:8056/back-stage-management-8056/ajax/useronline",
           success: function(r) {
             						if (r == "") {
             							o.$router.push("/login");
@@ -87,7 +87,7 @@
       selectuser: function() {
         var o=this;
         $.ajax({
-          url: "http://127.0.0.1:8080/java06/ajax/selectuser",
+          url: "http://127.0.0.1:8056/back-stage-management-8056/ajax/selectuser",
           success: function(r) {
                  o.user=r.user;
           },
@@ -99,7 +99,7 @@
       deleteuser: function(uid) {
         var o=this;
         $.ajax({
-          url: "http://127.0.0.1:8080/java06/ajax/deleteuser",
+          url: "http://127.0.0.1:8056/back-stage-management-8056/ajax/deleteuser",
           success: function(r) {
                    if(r>0){
                      o.selectuser();

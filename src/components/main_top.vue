@@ -1,8 +1,8 @@
 <template>
-  <div class="top">
+  <div class="top bg-secondary navbar-dark">
     <div>
       <div class=" bg-secondary navbar-dark" style="width: 10%;float: left;height: 83px;"></div>
-      <nav class="navbar navbar-expand-sm bg-secondary navbar-dark" style="width: 80%;float: left;height: 83px;">
+      <nav class="navbar navbar-expand-sm bg-secondary navbar-dark" style="width: 70%;float: left;height: 83px;">
         <form class="form-inline">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="请输入">

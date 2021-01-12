@@ -6,11 +6,11 @@
 			<p>请登录</p>
 			<br />
 			<div class="form-group">
-				<input type="text" class="form-control" v-model="logname"  placeholder="账号">
+				<input type="text" class="form-control" v-model="aname"  placeholder="账号">
 			</div>
 			<br />
 			<div class="form-group">
-				<input type="password" class="form-control"  v-model="password"  placeholder="密码">
+				<input type="password" class="form-control"  v-model="apw"  placeholder="密码">
 			</div>
 			<a style="float: right;">忘记密码?</a><br />
 			<br />
@@ -29,8 +29,8 @@
 		
 		data:function(){
 			return{
-				logname:"",
-				password:""
+				aname:"",
+				apw:""
 				
 			}
 		},
@@ -39,17 +39,17 @@
 			querylogin:function(){
 				var o=this;
 				$.ajax({
-					url: "http://127.0.0.1:8080/java06/ajax/querylogin",
+					url: "http://127.0.0.1:8056/back-stage-management-8056/ajax/querylogin",
 					data:{
-						logname:o.logname,
-						password:o.password,
+						aname:o.aname,
+						apw:o.apw,
 						
 					},
 					//获取登录状态
 					success: function(r) {
 						if(r){
 							$.ajax({
-								url: "http://127.0.0.1:8080/java06/ajax/useronline",
+								url: "http://127.0.0.1:8056/back-stage-management-8056/ajax/administratoronline",
 								success: function(r) {
 									alert("登录成功")
 									console.log(r);

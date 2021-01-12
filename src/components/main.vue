@@ -11,16 +11,13 @@
 
       </div>
 
-
-
-      <hr />
       <div class="ua" style="width: 100%;height: 30px;">
         商品详情
       </div>
       <div class="uas">
 
       </div>
-      <hr />
+   
       <div class="ua" style="width: 100%;height: 30px;">
         用户详情
       </div>
@@ -46,7 +43,9 @@
 
     data() {
       return {
-
+        usercount:"",
+		goodscount:""
+		
       }
     },
     methods: {
@@ -54,14 +53,13 @@
       success: function() {
         var o=this;
         $.ajax({
-          url: "http://127.0.0.1:8080/java06/ajax/useronline",
+          url: "http://127.0.0.1:8056/back-stage-management-8056/ajax/useronline",
           success: function(r) {
-            						if (r == "") {
-            							o.$router.push("/login");
-            						} else {
-            							o.queryAddress();
-            						}
-
+				if (r == "") {
+					o.$router.push("/login");
+				} else {
+					o.queryAddress();
+				}
           },
           xhrFields: {
             withCredentials: true //传递cookie,保持session的唯一性
@@ -103,7 +101,7 @@
     width: 85%;
     float: right;
     height: 920px;
-    background-color: palegoldenrod;
+   
     display: inline-block;
   }
 
@@ -117,7 +115,7 @@
 
   .uas {
     width: 100%;
-    height: 250px;
+    height: 180px;
     border: 1px solid lightgrey;
     background-color: white;
     padding: 5px;
