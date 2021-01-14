@@ -53,12 +53,12 @@
       success: function() {
         var o=this;
         $.ajax({
-          url: "http://127.0.0.1:8056/back-stage-management-8056/ajax/useronline",
+          url: "http://127.0.0.1:8056/back/ajax/administratoronline",
           success: function(r) {
 				if (r == "") {
 					o.$router.push("/login");
 				} else {
-					o.queryAddress();
+					
 				}
           },
           xhrFields: {
