@@ -67,7 +67,7 @@
     display: inline-block;
   }
   p{
-    background-color: #007BFF;
+    background-color:moccasin;
     padding: 15px;
   }
 </style>

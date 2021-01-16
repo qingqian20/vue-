@@ -28,7 +28,7 @@
           </tr>
           <tr v-for="v in user">
             <td>
-              
+
                 <input type="text" v-model="v.uname" />{{}}
             </td>
             <td><input type="text" v-model="v.ufname" /></td>
@@ -132,7 +132,7 @@
     width: 85%;
     float: right;
     height: 920px;
-    background-color: palegoldenrod;
+    background-color: #E0FFFF;
     display: inline-block;
   }
 

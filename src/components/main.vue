@@ -120,7 +120,7 @@
     width: 85%;
     float: right;
     height: 920px;
-
+    background-color: #E0FFFF;
     display: inline-block;
   }
 
@@ -136,7 +136,7 @@
     width: 100%;
     height: 180px;
     border: 1px solid lightgrey;
-    background-color: white;
+    background-color:#F0FFFF;
     padding: 5px;
   }
 </style>
