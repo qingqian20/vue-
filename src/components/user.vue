@@ -7,9 +7,9 @@
       </div>
 
       <div class="inp">
-        用户名<input v-model="uname" />
-        姓名<input v-model="ufname" />
-        <button @click="usernameselect(v.uid)">搜索</button>
+        用户名<input v-model="uname"style="background:rgba(255,255,255,0.1);" />
+        姓名<input v-model="ufname" style="background:rgba(255,255,255,0.1);"/>
+        <button @click="usernameselect(v.uid)" style="background:rgba(255,255,255,0.1);">搜索</button>
       </div>
       <br />
       <div>

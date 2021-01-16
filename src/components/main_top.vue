@@ -1,8 +1,8 @@
 <template>
-  <div class="top " style="background-color: lightcyan;">
+  <div class="top " style="background-color: lightcyan; border-bottom: 1px solid black;">
 
 
-      <nav class="navbar navbar-expand-sm k" style="width: 100%;float: left;height: 83px; background-color: lightcyan; ">
+      <nav class="navbar navbar-expand-sm k" style="width: 100%;float: left;height: 83px; background-color: lightcyan;border-bottom: 1px solid black; ">
         <h1>{{s}}</h1>
         <div style="display: inline-block; position: absolute;margin-left: 90%;"  >
           <div class="dropdown" >

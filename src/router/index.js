@@ -7,6 +7,7 @@ import login from '@/components/login'
 import register from '@/components/register'
 import adduser from '@/components/adduser'
 import goodsinfo from '@/components/goodsinfo'
+import order from '@/components/order'
 
 Vue.use(Router)
 
@@ -48,6 +49,11 @@ export default new Router({
       path: '/goodsinfo',
       name: 'goodsinfo',
       component: goodsinfo
+    },
+    {
+      path: '/order',
+      name: 'order',
+      component: order
     }
   ]
 })

@@ -60,7 +60,9 @@
         <div id="collapseThree" class="collapse">
           <div class="card-body" style="padding: 0px;">
             <ol>
-              <li>订单信息</li>
+              <li>
+                <a href="/order">订单信息</a>
+              </li>
               <li>2</li>
               <li>3</li>
             </ol>
