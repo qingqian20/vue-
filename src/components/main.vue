@@ -21,10 +21,13 @@
       </div>
 
       <div class="ua" style="width: 100%;height: 30px;">
-        商品详情
+        商品信息
       </div>
       <div class="uas">
-
+     <div style="width: 70%;margin: auto;">
+       <h6 style="float: left;">新到商品：</h6>
+       <h6 style="float: right;">更多</h6>
+     </div>
 
       </div>
 
@@ -32,7 +35,7 @@
         用户详情
       </div>
       <div class="uas">
-       用户数：<span>普通用户{{}}</span><span>VIP尊享用户{{}}</span>
+      <span>普通用户{{}}</span><span>VIP尊享用户{{}}</span>
         <div class="progress">
            <div class="progress-bar bg-success" style="width:70%">
             普通用户
