@@ -8,7 +8,16 @@
         订单详情
       </div>
       <div class="uas">
-
+<br />
+     <span>已付款{{}}</span>
+<div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%">已付款</div>
+  </div>
+  <br />
+  <span>未付款{{}}</span>
+  <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%">未付款</div>
+    </div>
       </div>
 
       <div class="ua" style="width: 100%;height: 30px;">
@@ -16,13 +25,23 @@
       </div>
       <div class="uas">
 
+
       </div>
-   
+
       <div class="ua" style="width: 100%;height: 30px;">
         用户详情
       </div>
       <div class="uas">
+       用户数：<span>普通用户{{}}</span><span>VIP尊享用户{{}}</span>
+        <div class="progress">
+           <div class="progress-bar bg-success" style="width:70%">
+            普通用户
+           </div>
+           <div class="progress-bar bg-warning" style="width:30%">
+            VIP尊享用户
+           </div>
 
+         </div>
       </div>
     </div>
     <main_menu></main_menu>
@@ -45,7 +64,7 @@
       return {
         usercount:"",
 		goodscount:""
-		
+
       }
     },
     methods: {
@@ -58,7 +77,7 @@
 				if (r == "") {
 					o.$router.push("/login");
 				} else {
-					
+
 				}
           },
           xhrFields: {
@@ -101,7 +120,7 @@
     width: 85%;
     float: right;
     height: 920px;
-   
+
     display: inline-block;
   }
 

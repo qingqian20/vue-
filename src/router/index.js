@@ -6,6 +6,8 @@ import user from '@/components/user'
 import login from '@/components/login'
 import register from '@/components/register'
 import adduser from '@/components/adduser'
+import goodsinfo from '@/components/goodsinfo'
+
 Vue.use(Router)
 
 export default new Router({
@@ -41,6 +43,11 @@ export default new Router({
       path: '/adduser',
       name: 'adduser',
       component: adduser
+    },
+    {
+      path: '/goodsinfo',
+      name: 'goodsinfo',
+      component: goodsinfo
     }
   ]
 })

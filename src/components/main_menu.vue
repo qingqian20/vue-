@@ -6,7 +6,7 @@
   <div id="accordion" style="margin: 0px;padding: 0px;">
 <div class="card " >
       <div class="card-header" style="height: 80px;" >
-        <a class="card-link" style=" font-size: 25px;line-height: 55px;">
+        <a class="card-link" style=" font-size: 25px;line-height: 55px;" href="/">
           后台管理系统
         </a>
       </div>
@@ -20,10 +20,12 @@
         <div class="card-body" style="padding: 0px;">
          <ol>
            <li>
-             <a>现有商品</a>
+             <a href="/goodsinfo">现有商品</a>
            </li>
-           <li>上架商品</li>
-           <li>修改商品信息</li>
+           <li>
+             <a href="addgoods">上架商品</a>
+           </li>
+
          </ol>
         </div>
       </div>
@@ -36,9 +38,13 @@
       <div id="collapseOne" class="collapse" >
         <div class="card-body" style="padding: 0px;">
           <ol>
-            <li>账户信息</li>
-            <li>添加账户</li>
-            <li>3</li>
+            <li>
+              <a href="/user">账户信息</a>
+            </li>
+            <li >
+              <a href="/adduser">添加用户</a>
+            </li>
+
           </ol>
         </div>
       </div>
@@ -115,5 +121,10 @@
   }
   .card-link{
     color: black;
+  }
+  a{
+    text-decoration:none;
+    color: black;
+
   }
 </style>
